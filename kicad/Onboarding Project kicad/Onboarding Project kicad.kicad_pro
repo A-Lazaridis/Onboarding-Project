@@ -523,7 +523,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "mrc_template.kicad_pro",
+    "filename": "Onboarding Project kicad.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -709,7 +709,7 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "mrc_template.kicad_sch",
+        "filename": "Onboarding Project kicad.kicad_sch",
         "name": "Root",
         "uuid": "dff3cfde-4775-47a0-871e-26e88704f259"
       }
@@ -725,12 +725,12 @@
   ],
   "text_variables": {
     "MRC_CONTRIBUTORS": "logan fick",
-    "MRC_DATE": "9/1/2026",
+    "MRC_DATE": "9/21/2026",
     "MRC_DESC_1": "line one",
     "MRC_DESC_2": "line two",
     "MRC_REVISION": "1.0",
-    "MRC_SUBSYSTEM": "Comms",
-    "MRC_TITLE": "Comms Example Board"
+    "MRC_SUBSYSTEM": "Power Converters",
+    "MRC_TITLE": "24v - 5v Buck Converter"
   },
   "tuning_profiles": {
     "meta": {
