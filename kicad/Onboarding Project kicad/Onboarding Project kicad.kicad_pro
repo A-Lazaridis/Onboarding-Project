@@ -724,13 +724,13 @@
     ]
   ],
   "text_variables": {
-    "MRC_CONTRIBUTORS": "logan fick",
-    "MRC_DATE": "9/21/2026",
+    "MRC_CONTRIBUTORS": "Aristotelis Lazaridis",
+    "MRC_DATE": "9/22/2026",
     "MRC_DESC_1": "line one",
     "MRC_DESC_2": "line two",
     "MRC_REVISION": "1.0",
-    "MRC_SUBSYSTEM": "Power Converters",
-    "MRC_TITLE": "24v - 5v Buck Converter"
+    "MRC_SUBSYSTEM": "Boost Converter",
+    "MRC_TITLE": "12v - 24v"
   },
   "tuning_profiles": {
     "meta": {
