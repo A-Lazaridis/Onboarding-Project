@@ -714,7 +714,7 @@
         "uuid": "dff3cfde-4775-47a0-871e-26e88704f259"
       }
     ],
-    "used_designators": "R1",
+    "used_designators": "R1-4,U1,D1,BT1,#PWR1-6,L1,C1-4",
     "variants": []
   },
   "sheets": [
@@ -726,11 +726,11 @@
   "text_variables": {
     "MRC_CONTRIBUTORS": "Aristotelis Lazaridis",
     "MRC_DATE": "9/22/2026",
-    "MRC_DESC_1": "line one",
+    "MRC_DESC_1": "Steps 12v - 24v",
     "MRC_DESC_2": "line two",
     "MRC_REVISION": "1.0",
-    "MRC_SUBSYSTEM": "Boost Converter",
-    "MRC_TITLE": "12v - 24v"
+    "MRC_SUBSYSTEM": "N/A",
+    "MRC_TITLE": "Boost Converter"
   },
   "tuning_profiles": {
     "meta": {
