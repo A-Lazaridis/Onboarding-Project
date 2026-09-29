@@ -1,71 +1,63 @@
-<!-- kicad_template/README.md -->
 
 <div align="center">
-    <img src="/img/mrc.jpeg" width="200">
+    <img src="img/mrc.jpeg" width="200">
 </div>
 
-# BU Mars Rover Club Electrical Team KiCad 10.0 Project Template
 
-This repository is a template for the electrical team to use for board design. It can be easily cloned, edited, and uploaded to the club github for collaboration between members.
 
-## File Structure
+# MC34063A Boost Converter
 
-- ```/kicad/``` contains all of the KiCad 10.0 project files
-- ```/datasheets/``` should contain all of the .pdf files for the important components
-- ```/calculations/``` should include any significant calculations that led to a component choice or value choice
-- ```/cad/``` should include any .STEP or .STL files used with your board, or a link to your OnShape document
+12 V to 24 V step-up converter (250 mA) using the MC34063A, based on Figure 10 of the datasheet. Designed in KiCad.
 
-## Using this Template in KiCad 10.0
+## Contents
+1. [Design Requirements](#design-requirements)
+2. [Calculations](#calculations)
+3. [Schematic](#schematic)
+4. [Files](#files)
 
-Download KiCad [here](https://www.kicad.org/download/). We are using version 10.0 for the club this year.
+---
 
-1. Click the ```Use this Template``` to make a personal copy of this repository.
+## Design Requirements
 
-2. Set the repository name to your desired name: PROJECT_NAME
+| Parameter | Value |
+|---|---|
+| Input voltage | 12 V |
+| Output voltage | 24 V |
+| Output current | 250 mA |
+| Min frequency | 30 kHz |
+| Ripple | 240 mV |
 
-3. Clone the repository to your local machine, preferably in a projects folder for Mars Rover Club.
+## Calculations
 
-4. Open up KiCad 10.0 and open the default project in the ```kicad/default``` directory.
+Full math is in [calculations/README.md](calculations/README.md).
 
-5. Click ```save as``` and save it to the ```kicad``` directory under your desired name PROJECT_NAME.
+## Schematic Components
 
-6. The folder tree should look like this:
+| Ref | Part | Calculated | Chosen | How it was chosen |
+|---|---|---|---|---|
+| U1 | MC34063AP | - | MC34063AP | Datasheet Figure 10 |
+| L1 | Inductor | 183 µH min | 220 µH | Calculated |
+| D1 | Diode | - | 1N5819 | Datasheet Figure 10 |
+| Rsc | Resistor | 0.28 Ω | 0.22 Ω | Calculated |
+| R | Resistor (pin 8) | - | 180 Ω | Datasheet Figure 10 |
+| R1 | Resistor | - | 1 kΩ | Picked as the divider base value |
+| R2 | Resistor | 18.2 kΩ | 18 kΩ | Calculated |
+| C1 | Ceramic capacitor | 708 pF | 680 pF | Calculated |
+| C2 | Electrolytic capacitor | - | 100 µF | Datasheet Figure 10 |
+| C4 | Electrolytic capacitor | 166 µF min | 300 µF | Calculated |
 
-```
-PROJECT_NAME/
-├── kicad/
-│   ├── default/
-│   │   ├── mrc_template.kicad_dru
-│   │   ├── mrc_template.kicad_pcb
-│   │   ├── mrc_template.kicad_pro
-│   │   ├── mrc_template.kicad_sch
-│   │   └── sheet.kicad_wks
-│   └── PROJECT_NAME/
-│       ├── PROJECT_NAME.kicad_dru
-│       ├── PROJECT_NAME.kicad_pcb
-│       ├── PROJECT_NAME.kicad_pro
-│       ├── PROJECT_NAME.kicad_sch
-│       └── sheet.kicad_wks
-├── datasheets
-├── calculations
-├── img
-├── README.md
-└── LICENSE
-```
+## Schematic
 
-7. Delete the ```kicad/default``` directory.
+![Schematic](img/schematic_img_1.png)
 
-8. Open up your newly renamed project, ```PROJECT_NAME.kicad_pro```, and then open the schematic editor.
+Reference circuit from the datasheet (Figure 10):
 
-9. Click ```File -> Schematic Setup```, then under ```Project -> Text Variables```, populate all of the fields with the correct information such as ```contributors``` and board ```revision```. Then click OK and you should see the bottom right of the schematic and layout correctly update. See a screenshots below:
+![Datasheet Figure 10](img/fig10_layout_img.png)
 
-<br>
+## Files
 
-<div align="center">
-    <img src="img/text_variables.png" width="500" max-height="400">
-    <img src="img/fields.png" width="500" max-height="400">
-</div>
-
-<br>
-
-8. Edit this README.md file, initialize the git repository, and start working on your project!
+| Item | Location |
+|---|---|
+| KiCad project | [kicad/](kicad/) |
+| Calculations | [calculations/README.md](calculations/README.md) |
+| Datasheets | [datasheets/](datasheets/) |
