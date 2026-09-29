@@ -1,9 +1,23 @@
+
+
+#Input voltage (V)
 Vin = 12
+#Output voltage (V)
 Vout = 24
+
+#Forward voltage of the 1N5819 diode, from datasheet (V)
 Vf = 0.45
-Vsat = 0.45
+
+#sSturation voltage (V)
+Vsat = 1.0
+
+#Frequency (Hz)
 f = 30*10**3
+
+#Maximum output current (A)
 I_out = 0.250
+
+#Min ripple voltage (V)
 V_ripple = 0.24
 
 # (ton/toff)
@@ -40,4 +54,3 @@ print(f"Rsc      = {Rsc:.2f} ohm")
 print(f"L_min    = {L_min*1e6:.0f} uH")
 print(f"C_O      = {C_O*1e6:.0f} uF")
 print(f"R2       = {R2:.0f} ohm")
-
