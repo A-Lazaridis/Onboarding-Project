@@ -29,7 +29,9 @@
 
 ## Calculations
 
-Full math is in [calculations/README.md](calculations/README.md).
+Full math is in [calculations/README.md](https://github.com/A-Lazaridis/Onboarding-Project/blob/main/calculations/README.md).
+
+Python script used for calculations: [calculations/Calculations_Python.py](https://github.com/A-Lazaridis/Onboarding-Project/blob/main/calculations/Calculations_Python.py).
 
 ## Schematic Components
 

@@ -4,9 +4,9 @@
     <img src="../img/mrc.jpeg" width="200">
 </div>
 
-# Calculations
 
 # MC34063A Boost Converter Calculations
+Python script used for calculations: [Calculations_Python.py](Calculations_Python.py)
 
 ## Constants
 
