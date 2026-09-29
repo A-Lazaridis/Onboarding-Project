@@ -1020,12 +1020,6 @@
 		)
 	)
 	(junction
-		(at 137.16 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0748fa54-50f6-4b8d-a11e-4879a2560707")
-	)
-	(junction
 		(at 140.97 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1055,6 +1049,22 @@
 		(color 0 0 0 0)
 		(uuid "e092459a-eede-4bc7-8131-2b31f2ef879c")
 	)
+	(junction
+		(at 137.16 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecd215f7-ff40-47fb-8b17-c2e79ee52659")
+	)
+	(wire
+		(pts
+			(xy 134.62 97.79) (xy 134.62 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04d38f86-0a05-440e-a1d7-2fd85fc4baa8")
+	)
 	(wire
 		(pts
 			(xy 130.81 92.71) (xy 130.81 85.09)
@@ -1077,16 +1087,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 97.79) (xy 137.16 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b31cc65-b1d1-46b5-b46d-c5d37e615dd7")
-	)
-	(wire
-		(pts
 			(xy 96.52 99.06) (xy 96.52 104.14)
 		)
 		(stroke
@@ -1097,7 +1097,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 97.79) (xy 137.16 97.79)
+			(xy 140.97 100.33) (xy 137.16 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1147,7 +1147,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 97.79) (xy 140.97 110.49)
+			(xy 140.97 100.33) (xy 140.97 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1177,6 +1177,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 97.79) (xy 134.62 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5adf06b9-f777-432c-90a4-8f76d5903e75")
+	)
+	(wire
+		(pts
 			(xy 96.52 92.71) (xy 96.52 93.98)
 		)
 		(stroke
@@ -1184,6 +1194,16 @@
 			(type default)
 		)
 		(uuid "63f1ee01-16da-454a-aa54-e86365ff5856")
+	)
+	(wire
+		(pts
+			(xy 134.62 90.17) (xy 137.16 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c87ed48-a053-4fd0-b441-3898a791e5f9")
 	)
 	(wire
 		(pts
@@ -1234,6 +1254,16 @@
 			(type default)
 		)
 		(uuid "993a4ccb-8ab8-44d1-9167-2ef20ce6273a")
+	)
+	(wire
+		(pts
+			(xy 137.16 92.71) (xy 137.16 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b334567d-b854-42dc-95df-c26014573e61")
 	)
 	(wire
 		(pts
@@ -1419,7 +1449,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N5819")
-		(at 137.16 93.98 90)
+		(at 137.16 96.52 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1430,17 +1460,6 @@
 		(fields_autoplaced yes)
 		(uuid "0370e313-f630-41e7-a55a-1f4951b6cf50")
 		(property "Reference" "D1"
-			(at 139.7 93.0274 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N5819"
 			(at 139.7 95.5674 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1451,8 +1470,19 @@
 				(justify right)
 			)
 		)
+		(property "Value" "1N5819"
+			(at 139.7 98.1074 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 141.605 93.98 0)
+			(at 141.605 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1463,7 +1493,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
-			(at 137.16 93.98 0)
+			(at 137.16 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1474,7 +1504,7 @@
 			)
 		)
 		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
-			(at 137.16 93.98 0)
+			(at 137.16 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

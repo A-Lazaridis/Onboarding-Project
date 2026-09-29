@@ -728,7 +728,7 @@
     "MRC_DATE": "9/22/2026",
     "MRC_DESC_1": "Steps 12v - 24v",
     "MRC_DESC_2": "line two",
-    "MRC_REVISION": "1.0",
+    "MRC_REVISION": "1.1",
     "MRC_SUBSYSTEM": "N/A",
     "MRC_TITLE": "Boost Converter"
   },
